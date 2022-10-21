@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NavBarItemVO {
-  const NavBarItemVO({required this.label, required this.icon});
+  const NavBarItemVO({required this.label});
   final String label;
-  final IconData icon;
 }
 
 class AppBarVO {
@@ -24,5 +23,5 @@ class TabVO {
   final Widget Function() builder;
   final AppBarVO appbar;
   final NavBarItemVO? navBarItem;
-  final Widget Function(BuildContext)? floatingButton;
+  final Widget? Function(BuildContext)? floatingButton;
 }

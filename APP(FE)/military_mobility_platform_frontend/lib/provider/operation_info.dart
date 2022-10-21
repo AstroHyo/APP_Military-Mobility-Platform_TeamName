@@ -1,12 +1,13 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:military_mobility_platform_frontend/model/operation.dart';
 import 'package:military_mobility_platform_frontend/model/mobility.dart';
+import 'package:military_mobility_platform_frontend/model/reservation.dart';
+import 'package:military_mobility_platform_frontend/model/operation.dart';
 import 'package:military_mobility_platform_frontend/service/api.dart';
 
 class OperationInfoProvider extends ChangeNotifier {
   String _safetyCheck = "False";
-  bool _safetyCheckBool = False;
+  bool _safetyCheckBool = false;
   String _driverInfo = "";
   String _commanderInfo = "";
   String _operationPurpose = "";
@@ -23,7 +24,7 @@ class OperationInfoProvider extends ChangeNotifier {
 
   void safetyCheckTrue() {
     _safetyCheck = "True";
-    _safetyCheckBool = True;
+    _safetyCheckBool = true;
     notifyListeners();
   }
 
@@ -49,42 +50,41 @@ class OperationInfoProvider extends ChangeNotifier {
 
   void operationNoteSet(String operationNote) {
     _operationNote = operationNote;
+    notifyListeners();
+  }
+
+  void operationPlanSet() {
     _operationPlan = _operationNote + " " + _operationPurpose;
     notifyListeners();
   }
-  
-  Future<OperationDTO> confirmSafetyCheck(
+
+  Future<void> confirmSafetyCheck(
       Dio authClient, ReservationDTO reservation) async {
     try {
-      final dto = OperationDTO(
-          reservation_id: reservation.id,
-          safety_checklist: _safetyCheckBool);
-      
-      return APIService(authClient).confirmSafetyCheck(dto);
+      final dto = SafetyCheckDTO(
+          reservation_id: reservation.id, safety_checklist: _safetyCheckBool);
+      APIService(authClient).confirmSafetyCheck(dto);
     } catch (exception) {
       return Future.error(exception.toString());
     }
-    
-  Future<OperationDTO> makeOperationPlan(
+  }
+
+  Future<void> makeOperationPlan(
       Dio authClient, ReservationDTO reservation) async {
     try {
-      final dto = OperationDTO(
-          reservation_id: reservation.id,
-          operation_plan: _operationPlan);
-      
-      return APIService(authClient).makeOperationPlan(dto);
+      final dto = OperationPlanDTO(
+          reservation_id: reservation.id, operation_plan: _operationPlan);
+      APIService(authClient).makeOperationPlan(dto);
     } catch (exception) {
       return Future.error(exception.toString());
     }
-    
-    Future<OperationDTO> returnVehicle(
-      Dio authClient, ReservationDTO reservation) async {
+  }
+
+  Future<void> returnVehicle(Dio authClient, ReservationDTO reservation) async {
     try {
-      final dto = OperationDTO(
-          reservation_id: reservation.id);
-      
-      return APIService(authClient).returnVehicle(dto);
+      APIService(authClient).returnVehicle(reservation.id);
     } catch (exception) {
       return Future.error(exception.toString());
     }
+  }
 }

@@ -28,21 +28,21 @@
 군 모빌리티 플랫폼 app의 핵심 기능은 실시간 배차신청 및 확인, 안전점검 체크리스트 확인, 운행계획 작성, 사고접수 및 구난 요청, 운전병 마일리지 전산화 등 입니다.
 
 ### 기대 효과
--스마트폰 app을 통해 언제 어디서나 쉽고 간편하게 군 이동수단(차량) 관련 정보를 주고받을 수 있습니다.<br>
--운전병은 기존의 수기로 작성되던 운전병 마일리지, 운행기록부를 전산화하여 쉽게 조회/관리할 수 있습니다.<br>
--사용자(탑승자)는 사고 발생 시 신속하게 보고하고 구난차량을 요청할 수 있습니다.<br>
--수송업무 담당자는 자신이 관리하는 이동수단(차량)의 배차를 승인하고 목록을 조회하고 관리할 수 있습니다.<br>
+1. 스마트폰 app을 통해 언제 어디서나 쉽고 간편하게 군 이동수단(차량) 관련 정보를 주고받을 수 있습니다.<br>
+2. 운전병은 기존의 수기로 작성되던 운전병 마일리지, 운행기록부를 전산화하여 쉽게 조회/관리할 수 있습니다.<br>
+3. 사용자(탑승자)는 사고 발생 시 신속하게 보고하고 구난차량을 요청할 수 있습니다.<br>
+4. 수송업무 담당자는 자신이 관리하는 이동수단(차량)의 배차를 승인하고 목록을 조회하고 관리할 수 있습니다.<br>
 
-### 발표 자료(추가 예정)
+### 발표 자료(수정 작업중)
+https://docs.google.com/presentation/d/e/2PACX-1vQ43KBXZZqnEAMP_ddxZRnNsgHBSEi2qVnJPBkTqsEBGGmw-ERHwm6VLj499oOF5rKSbOB6h0kazxMD/pub?start=false&loop=false&delayms=3000
 
 ### 시연 영상(추가 예정)
 
 [(Back to top)](#목차)
 
 ## 기능 설명
-
- ### 0. 로그인 / 회원가입
- #### 0-1. 로그인  
+ ### 1. 로그인 / 회원가입
+ #### 1-1. 로그인  
 <table>
   <tr>
     <td align="center" width="50%"><img src="images/img03.png" alt="로그인" width="195" height="422" /></td>
@@ -60,7 +60,7 @@
 </table>
 <br>
 
- #### 0-2. 회원가입(추가 예정)
+ #### 1-2. 회원가입(추가 예정)
  <table>
   <tr>
     <td align="center" width="50%"><img src="images/img07.png" alt="회원가입" width="195" height="422" /></td>
@@ -81,11 +81,11 @@
 </table>
 <br>
 
- ### 1. 실시간 군 이동수단 배차 신청 / 확인
- #### 1-1. 배차 신청 
+ ### 2. 실시간 군 이동수단 배차 신청 / 확인
+ #### 2-1. 배차 신청 
 <table>
   <tr>
-    <td align="center" width="50%"><img src="images/img01.png" alt="배차신청" width="195" height="422" /></td>
+    <td align="center" width="50%"><img src="images/example-1.gif" alt="배차신청" width="195" height="422" /></td>
     <td>o 기능명: 배차 신청<br><br>
      	o 개요: 군 이동수단(차량) 관련 실시간 배차신청 화면입니다. 출발지 목적지를 설정할 수 있으며, 탑승인원 그리고 경유지 등 세부사항을 설정할 수 있습니다. 군 이동수단의 효율적인 이용을 위해 세부 옵션을 같이 신청받아서 유동적으로 활용할 수 있습니다. 행선지가 같거나 시간을 분배해서 차량을 사용할 수 있다면 효율적으로 이용할 수 있습니다.<br><br>
 	o 엑터명: 탑승자<br><br>
@@ -100,7 +100,7 @@
 </table>
 <br>
 
- #### 1-2. 차량 선택 
+ #### 2-2. 차량 선택 
 <table>
   <tr>
     <td align="center" width="50%"><img src="images/img04.png" alt="차량선택" width="195" height="422" /></td>
@@ -117,7 +117,7 @@
 </table>
 <br>
 
- #### 1-3. 배차 확인
+ #### 2-3. 배차 확인
 <table>
   <tr>
     <td align="center" width="50%"><img src="images/img05.png" alt="배차확인" width="195" height="422" /></td>
@@ -135,7 +135,7 @@
 </table>
 <br>
 
- ### 2. 군 이동수단의 one-stop 관리 서비스
+ ### 3. 군 이동수단의 one-stop 관리 서비스
  
 <table>
   <tr>
@@ -152,45 +152,127 @@
 	   4. 차량 이용 완료 후 차량 반납 탭을 클릭해 차량 이용을 종료합니다.</td>
   </tr>
 </table>
+<br>
 
- ### 3. 운전병 마일리지 전산화
+ ### 4. 운행이력(운전병 마일리지)
+
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="images/example-2.gif" alt="운행이력" width="195" height="422" /></td>
+    <td>o 기능명: 군 이동수단의 입체적인 관리<br><br>
+	o 개요: 군 이동수단의 관리 화면입니다. 안전 점검표를 차량 운행 전에 작성하고, 운행계획을 작성할 수 있습니다. 또한 사고접수, 구난차량 요청, 응급환자 후송 요청 등 응급상황에 대처할 수 있는 기능들을 포함하고 있습니다. 또한 차량 이용 완료 후에는 반납까지 one-stop으로 서비스를 받을 수 있습니다.<br><br>
+	o 엑터명: 탑승자<br><br>
+	o 사전 조건: 배차 신청 및 승인이 완료되어야 함.<br>
+	o 사후 조건: -<br><br>
+	o 기능 흐름:<br>
+	   1. 사용자는 안전점검표 작성을 통해 차량의 안전 운행을 준비합니다.<br>
+	   2. 운행 계획에 출발지, 도착지, 이동 경로, 특이사항 등을 기재합니다.<br>
+	   3. 차량 사고 발생 시 사고접수, 구난차량 요청, 응급환자 후송 요청 등을 실시합니다.<br>
+	   4. 차량 이용 완료 후 차량 반납 탭을 클릭해 차량 이용을 종료합니다.</td>
+  </tr>
+</table>
+<br>
+
+ ### 5. 수송업무 관리 기능
+ #### 5-1. 관리자 페이지(django-admin)
+<div align="center">
+    <img src="images/example-3.gif" alt="관리자 페이지">
+</div>
+<br>
+o 기능명: 수송업무 관리자 페이지
+o 개요: 수송업무 담당자가 접속하여 사용자, 차량, 이력 등을 관리할 수 있는 페이지입니다. 차량들을 등록하고 관리할 수 있으며, 배차를 승인하고 반려할 수 있습니다.<br><br>
+o 엑터명: 수송업무 담당자<br><br>
+o 사전 조건: 시스템 관리자 권한 및 계정/비밀번호 부여.<br>
+o 사후 조건: -<br><br>
+o 기능 흐름:<br>
+1. 사용자는 안전점검표 작성을 통해 차량의 안전 운행을 준비합니다.<br>
+2. 운행 계획에 출발지, 도착지, 이동 경로, 특이사항 등을 기재합니다.<br>
+3. 차량 사고 발생 시 사고접수, 구난차량 요청, 응급환자 후송 요청 등을 실시합니다.<br>
+4. 차량 이용 완료 후 차량 반납 탭을 클릭해 차량 이용을 종료합니다.</td>
+<br>
+
+ #### 5-2. 전체 이동현황 조회
+ <div align="center">
+    <img src="images/example-4.gif" alt="관리자 페이지">
+</div>
+<br>
+o 기능명: 수송업무 관리자 페이지
+o 개요: 수송업무 담당자가 접속하여 사용자, 차량, 이력 등을 관리할 수 있는 페이지입니다. 차량들을 등록하고 관리할 수 있으며, 배차를 승인하고 반려할 수 있습니다.<br><br>
+o 엑터명: 수송업무 담당자<br><br>
+o 사전 조건: 시스템 관리자 권한 및 계정/비밀번호 부여.<br>
+o 사후 조건: -<br><br>
+o 기능 흐름:<br>
+1. 사용자는 안전점검표 작성을 통해 차량의 안전 운행을 준비합니다.<br>
+2. 운행 계획에 출발지, 도착지, 이동 경로, 특이사항 등을 기재합니다.<br>
+3. 차량 사고 발생 시 사고접수, 구난차량 요청, 응급환자 후송 요청 등을 실시합니다.<br>
+4. 차량 이용 완료 후 차량 반납 탭을 클릭해 차량 이용을 종료합니다.</td>
 
 [(Back to top)](#목차)
 
 ## App 구성 및 필수 조건 안내
-* 크로스 플랫폼: iOS, Android 사용 가능
-* 권장: 
+
+### 1. 체계 구성도
+
+<div align="center">
+    <img src="images/system_architecture.PNG" alt="시스템 아키텍쳐">
+</div>
+
+### 2. 필수 조건 안내
+- Flutter sdk : '>=2.18.1 <3.0.0'
+- dependencies : <br>
+  cupertino_icons: ^1.0.2 <br>
+  provider: ^6.0.3 <br>
+  google_fonts: ^3.0.1 <br>
+  shared_preferences: ^2.0.15 <br>
+  json_serializable: ^6.4.1 <br>
+  intl: ^0.17.0 <br>
+  flutter_datetime_picker: ^1.5.1 <br>
+  fluttertoast: ^8.0.9 <br>
+  retrofit: ^3.3.1 <br>
+  dio: ^4.0.6 <br>
+  retrofit_generator: ^4.2.0 <br>
+  flutter_markdown: ^0.6.12 <br>
+  flutter_polyline_points: ^1.0.0 <br>
+  flutter_svg: ^1.1.5 <br>
+  google_maps_flutter: ^2.2.1 <br>
+  google_maps_flutter_web: ^0.4.0+3 <br>
+  map_pin_picker: ^0.0.1 <br>
+  geocoding: ^2.0.5 <br>
+  geolocator: ^9.0.2 <br>
+  latlong2: ^0.8.1 <br>
+  image_picker: ^0.8.4+4 <br>
+  location: ^4.4.0 <br>
 
 [(Back to top)](#목차)
 
 ## 기술 스택
 ### 📲 Front-end
 
-| Name     | Badge                                                                                                           | Version        | Website               |
-| -------- | --------------------------------------------------------------------------------------------------------------- | -------------  | --------------------- |
-| Dart     | ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)          | undefined      | https://dart.dev/     |
-| Flutter  | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) | undefined      | https://flutter.dev/  |
+| Name     | Badge                                                                                                           | Website               |
+| -------- | --------------------------------------------------------------------------------------------------------------- | --------------------- |
+| Dart     | ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)          | https://dart.dev/     |
+| Flutter  | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) | https://flutter.dev/  |
 
 ### 🖥️ Back-end
 
-| Name       | Badge                                                                                                          | Version    | Website                  |
-| ---------- | -------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------ |
-| Python     | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)         | undefined  | https://www.python.org/  |
-| DjangoREST | ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) | undefined | https://www.django-rest-framework.org/ |
+| Name       | Badge                                                                                                          | Website                  |
+| ---------- | -------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Python     | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)         | https://www.python.org/  |
+| DjangoREST | ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) | https://www.django-rest-framework.org/ |
  
 ### 💾 Databases
 
-| Name     | Badge                                                                                                     | Version           | Website               |
-| -------- | --------------------------------------------------------------------------------------------------------- | ----------------- | --------------------- |
-| MariaDB  | ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)  | undefined         | https://mariadb.org/  |
+| Name     | Badge                                                                                                     | Website               |
+| -------- | --------------------------------------------------------------------------------------------------------- | --------------------- |
+| MariaDB  | ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)  | https://mariadb.org/  |
 
 [(Back to top)](#목차)
 
 ## 설치 안내
 ```bash
-$ git clone git주소
-$ yarn or npm install
-$ yarn start or npm run start
+$ git clone https://github.com/osamhack2022-v2/APP_military-Mobility-Platform_miliVision
+$ cd ./APP\(FE\)/military_mobility_platform_frontend/
+$ flutter run -d web-server --web-hostname=0.0.0.0
 ```
 
 [(Back to top)](#목차)
